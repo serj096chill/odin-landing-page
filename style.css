@@ -9,19 +9,28 @@ body {
     flex-direction: column;
 }
 
-.header img {
-    border-radius: 50%;
-}
-
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #1F2937;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
-a {
+.header img {
+    border-radius: 50%;
+    max-width: 80px;
+    height: auto;
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.header a {
     text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
@@ -31,52 +40,62 @@ li {
     list-style-type: none;
 }
 
-ul {
-    display: flex;
-    gap: 40px;
-}
-
 .body1 {
     background-color: #1F2937;
     display: flex;
     justify-content: center;
-    gap: 300px;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 300px; */
+    padding: 40px 20px;
+}
+
+.body1-1 {
+    /* display: flex; */
+    max-width: 500px;
     padding: 20px;
+    flex-direction: column;
+    width: 400px;
+    color: #E5E7EB;
+    /* padding-top: 80px; */
+    /* gap: 20px; */
+    text-align: left;
 }
 
 .body1 h1 {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
+    margin-bottom: 15px;
 }
 
 .body1-1 p {
     color: #E5E7EB;
     font-size: 18px;
-}
-
-.body1-1 {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    padding-top: 80px;
-    gap: 20px;
+    margin-bottom: 20px;
 }
 
 .insta {
+    max-width: 500px;
     padding: 20px;
+}
+
+.insta img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .button {
     background-color: #3882F6;
     border: none;
     color: white;
-    padding: 8px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    /* margin: 4px 2px; */
     cursor: pointer;
     border-radius: 12px;
   }
